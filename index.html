@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bug Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🐞 Bug Tracker</h1>
+    <p>Manage and resolve issues efficiently</p>
+  </header>
+
+  <main>
+    <section class="bug-form">
+      <input type="text" id="bug-title" placeholder="Bug title..." />
+      <textarea id="bug-desc" placeholder="Bug description..."></textarea>
+      <select id="bug-priority">
+        <option value="Low">Low Priority</option>
+        <option value="High">High Priority</option>
+      </select>
+      <button onclick="addBug()">Add Bug</button>
+    </section>
+
+    <section class="bug-list" id="bug-list">
+      <!-- Bugs will appear here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bug Tracker | Built by Yoshik</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
